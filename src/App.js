@@ -1,10 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
-import data from "./mock-data.json"
 
 const App = () => {
 
-  const [spiral, setSpiral] = useState(data);
+  const [spiral, setSpiral] = useState([[0,1]]);
   const [addFormData, setAddFormData] = useState({
     rows: '',
     columns: ''
